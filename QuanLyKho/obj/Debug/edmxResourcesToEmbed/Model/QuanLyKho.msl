@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLyKhoModelStoreContainer" CdmEntityContainer="QuanLyKhoEntities">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Input">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Input">
+        <MappingFragment StoreEntitySet="Input">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateInput" ColumnName="DateInput" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InputInfor">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.InputInfor">
+        <MappingFragment StoreEntitySet="InputInfor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
+          <ScalarProperty Name="IdInput" ColumnName="IdInput" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="InputPrice" ColumnName="InputPrice" />
+          <ScalarProperty Name="OutputPrice" ColumnName="OutputPrice" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Object">
+        <MappingFragment StoreEntitySet="Object">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdUnit" ColumnName="IdUnit" />
+          <ScalarProperty Name="IdSpulier" ColumnName="IdSpulier" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Output">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Output">
+        <MappingFragment StoreEntitySet="Output">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateInput" ColumnName="DateInput" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutputInfor">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.OutputInfor">
+        <MappingFragment StoreEntitySet="OutputInfor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
+          <ScalarProperty Name="IdOutput" ColumnName="IdOutput" />
+          <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suplier">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Suplier">
+        <MappingFragment StoreEntitySet="Suplier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersRole">
+      <EntityTypeMapping TypeName="QuanLyKhoModel.UsersRole">
+        <MappingFragment StoreEntitySet="UsersRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
